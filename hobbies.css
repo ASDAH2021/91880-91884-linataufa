@@ -1,0 +1,74 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav"
+  "header header"
+  "imageOne textOne"
+  "textTwo imageTwo"
+  "imageThree textThree"
+  "footer footer";
+  grid-gap: 15px;
+  background-color: white;
+}
+
+.nav{
+  grid-area: nav;
+  background-color: rgba(105, 238, 220, 0.774);
+  padding: 20px;
+}
+
+.nav li{
+  display: inline;
+  padding: 30px;
+}
+
+.header{
+  grid-area: header;
+  background-color: rgba(0, 253, 127, 0.808);
+  padding: 20px;
+  text-align: center;
+}
+
+.imageOne{
+  grid-area: imageOne;
+  background-color: rgb(236, 67, 236);
+  padding: 25px;
+}
+
+.textOne{
+  grid-area: textOne;
+  background-color: rgb(17, 175, 238);
+  padding: 30px;
+}
+
+.imageTwo{
+  grid-area: imageTwo;
+  background-color: rgb(252, 62, 62);
+  padding: 20px;
+}
+
+.textTwo{
+  grid-area: textTwo;
+  background-color: rgba(81, 14, 168, 0.596);
+  padding: 20px;
+}
+
+.imageThree{
+  grid-area: imageThree;
+  background-color: rgb(255, 255, 0);
+  padding: 35px;
+}
+
+.textThree{
+  grid-area: textThree;
+  background-color: rgb(6, 253, 6);
+  padding: 30px;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: rgba(105, 238, 220, 0.774);
+  padding: 25px;
+}

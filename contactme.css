@@ -1,0 +1,48 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav"
+  "header imageOne"
+  "slideTwo slideTwo"
+  "footer footer";
+  grid-gap: 15px;
+  background-color: white;
+}
+
+.nav{
+  grid-area: nav;
+  background-color: rgb(255, 174, 107);
+  padding: 20px;
+}
+
+.nav li{
+  display: inline;
+  padding: 30px;
+}
+
+.header{
+grid-area: header;
+background-color: rgba(129, 173, 240, 0.637);
+padding: 24px;
+}
+
+.imageOne{
+  grid-area: imageOne;
+  background-color: rgb(230, 74, 230);
+  padding: 15px;
+}
+
+.slideTwo{
+  grid-area: slideTwo;
+  background-color: rgb(255, 198, 208);
+  padding: 20px;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: rgb(50, 248, 50);
+  padding: 15px;
+}
+
