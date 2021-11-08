@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .container{
+  font-family: 'Lato', sans-serif;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
@@ -8,18 +11,17 @@
   "slideTwo slideTwo"
   "footer footer";
   grid-gap: 15px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .profile {
-background-image: url("island.jpg");
 grid-area: profile;
-padding: 10px;
+padding: 8px;
 }
 
 .nav{
 grid-area: nav;
-background-color: rgba(255, 238, 4, 0.849);
+background-color: rgba(243, 97, 243, 0.849);
 padding: 25px;
 }
 
@@ -28,20 +30,27 @@ padding: 25px;
   padding: 30px;
 }
 
+.nav a {
+  color: white;
+}
+
 .slideOne{
 grid-area: slideOne;
-background-color: rgba(129, 173, 240, 0.637);
-padding: 24px;
+background-color: rgba(143, 67, 214, 0.637);
+padding: 12px;
+color: white;
 }
 
 .slideTwo{
 grid-area: slideTwo;
-background-color: rgb(18, 230, 88);
-padding: 40px;
+background-color: rgb(211, 56, 241);
+padding: 26px;
+color: white;
 }
 
 .footer{
 grid-area: footer;
 background-color: rgb(201, 67, 160);
-padding: 40px;
+padding: 24px;
+color: white;
 }

@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 .container {
+  font-family: 'Lato', sans-serif;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "nav nav"
-  "header header"
-  "imageOne slideOne"
-  "imageTwo imageThree"
-  "slideTwo imageFour"
-  "footer footer";
+  "nav nav nav"
+  "header header header"
+  "imageOne slideOne slideOne"
+  "slideTwo slideTwo imageTwo"
+  "imageThree imageThree imageThree"
+  "footer footer footer";
   grid-gap: 15px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .nav {
   grid-area: nav;
-  background-color: rgba(105, 238, 220, 0.774);
+  background-color: rgba(253, 128, 237, 0.979);
   padding: 20px;
 }
 
@@ -24,50 +27,58 @@
   padding: 30px;
 }
 
+.nav a {
+  color: white;
+}
+
 .header{
   grid-area: header;
-  background-color: rgb(190, 41, 190);
+  background-color: rgb(236, 97, 190);
   padding: 20px;
+  color: white;
 }
 
 .imageOne{
   grid-area: imageOne;
-  background-color: rgb(236, 161, 236);
+  background-color: rgb(235, 65, 184);
   padding: 35px;
 }
 
 .slideOne{
   grid-area: slideOne;
-  background-color: rgb(40, 209, 40);
+  background-color: rgb(236, 70, 181);
   padding: 20px;
+  color: white;
 }
 
 .imageTwo{
   grid-area: imageTwo;
-  background-color:rgb(127, 255, 212);
+  background-color:rgba(235, 31, 174, 0.945);
   padding: 20px;
-}
-
-.imageThree{
-  grid-area: imageThree;
-  background-color: rgb(235, 49, 80);
-  padding: 25px;
 }
 
 .slideTwo{
   grid-area: slideTwo;
-  background-color: rgb(255, 168, 6);
+  background-color: rgb(180, 27, 142);
   padding: 20px;
+ color: white;
 }
 
-.imageFour{
-  grid-area: imageFour;
-  background-color:rgb(8, 252, 170);
+.imageThree{
+  grid-area: imageThree;
+  background-color:rgb(180, 14, 139);
+  padding: 15px;
+}
+
+.slideThree{
+  grid-area: slideThree;
+  background-color:rgb(172, 16, 133);
   padding: 15px;
 }
 
 .footer{
   grid-area: footer;
-  background-color: rgb(4, 255, 4);
+  background-color: rgb(179, 7, 156);
   padding: 20px;
-}
+  color: white;
+ }
