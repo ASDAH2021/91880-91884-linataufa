@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.container{
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav nav"
+  "header header header"
+  "imageOne textOne textOne"
+  "textTwo textTwo imageTwo"
+  "imageThree textThree textThree"
+  "footer footer footer";
+  grid-gap: 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+.nav{
+  grid-area: nav;
+  background-color: rgba(42, 21, 230, 0.774);
+  padding: 20px;
+  color: white;
+}
+
+.nav li{
+  display: inline;
+  padding: 30px;
+}
+
+.nav a {
+  color: white;
+}
+
+.header{
+  grid-area: header;
+  background-color: rgba(14, 97, 175, 0.808);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.imageOne{
+  grid-area: imageOne;
+  background-color: rgb(77, 95, 197);
+  padding: 10px;
+}
+
+.textOne{
+  grid-area: textOne;
+  background-color: rgb(129, 134, 204);
+  padding: 30px;
+  color: white;
+}
+
+.imageTwo{
+  grid-area: imageTwo;
+  background-color: rgb(62, 87, 197);
+  padding: 10px;
+}
+
+.textTwo{
+  grid-area: textTwo;
+  background-color: rgba(82, 54, 245, 0.596);
+  padding: 20px;
+  color: white;
+}
+
+.imageThree{
+  grid-area: imageThree;
+  background-color: rgb(69, 45, 136);
+  padding: 35px;
+}
+
+.textThree{
+  grid-area: textThree;
+  background-color: rgb(22, 24, 161);
+  padding: 30px;
+  color: white;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: rgba(10, 44, 238, 0.774);
+  padding: 25px;
+  color: white;
+}

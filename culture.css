@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.container {
+  font-family: 'Lato', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "nav nav nav"
+  "header header header"
+  "imageOne slideOne slideOne"
+  "slideTwo slideTwo imageTwo"
+  "imageThree imageThree imageThree"
+  "footer footer footer";
+  grid-gap: 15px;
+  background-color: rgb(0, 0, 0);
+}
+
+.nav {
+  grid-area: nav;
+  background-color: rgba(253, 128, 237, 0.979);
+  padding: 20px;
+}
+
+.nav li {
+  display: inline;
+  padding: 30px;
+}
+
+.nav a {
+  color: white;
+}
+
+.header{
+  grid-area: header;
+  background-color: rgb(236, 97, 190);
+  padding: 20px;
+  color: white;
+}
+
+.imageOne{
+  grid-area: imageOne;
+  background-color: rgb(235, 65, 184);
+  padding: 35px;
+}
+
+.slideOne{
+  grid-area: slideOne;
+  background-color: rgb(236, 70, 181);
+  padding: 20px;
+  color: white;
+}
+
+.imageTwo{
+  grid-area: imageTwo;
+  background-color:rgba(235, 31, 174, 0.945);
+  padding: 20px;
+}
+
+.slideTwo{
+  grid-area: slideTwo;
+  background-color: rgb(180, 27, 142);
+  padding: 20px;
+ color: white;
+}
+
+.imageThree{
+  grid-area: imageThree;
+  background-color:rgb(180, 14, 139);
+  padding: 15px;
+}
+
+.slideThree{
+  grid-area: slideThree;
+  background-color:rgb(172, 16, 133);
+  padding: 15px;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: rgb(179, 7, 156);
+  padding: 20px;
+  color: white;
+ }
